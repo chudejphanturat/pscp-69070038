@@ -15,25 +15,25 @@
 หมายเลข/ชื่อโจทย์ OJ:
 
 ```text
-
+3025
 ```
 
 OJ submission ID ถ้ามีการส่งแล้ว:
 
 ```text
-
+548212
 ```
 
 สถานะ OJ:
 
 ```text
-Pass / Not Pass / Not Submit
+Pass
 ```
 
 เวลาที่ใช้คิดและทำโจทย์ด้วยตนเอง:
 
 ```text
-
+15-30 minutes
 ```
 
 เลือกหนึ่งข้อ:
@@ -73,7 +73,9 @@ More than 4 weeks
 ถ้ายังไม่เข้าใจโจทย์ทั้งหมด ให้เขียนสิ่งที่เข้าใจในตอนนี้ ความเข้าใจอาจยังไม่ครบหรืออาจผิดได้ แต่ต้องพยายามอธิบายอย่างจริงใจ
 
 ```text
-
+รับข้อมูลเดือนและวัน
+ทุกๆ 3 เดือนฤดูจะเปลี่ยน
+ตั้งแต่วัน 21 จะเพิ่มขึ้น 1 เดือน
 ```
 
 ---
@@ -93,9 +95,12 @@ More than 4 weeks
 สามารถเขียนเป็น pseudocode, flowchart idea หรือขั้นตอนความคิดได้
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1: รับเดือน และ วัน
+Step 2: ตั้งแต่วันที่ 21 ของเดือนที่ 3 หารลงตัว ให้เพิ่มขั้น 1 เดือน
+Step 3: เดือนที่ 1, 2, 3 หรือ มากกว่า 12 เป็น (winter)
+        เดือน 4, 5, 6 เป็น (spring)
+        เดือนที่ 7, 8, 9 เป็น (summer)
+        เดือน 10, 11, 12 เป็น (fall)
 ```
 
 ---
@@ -115,7 +120,12 @@ Step 3:
 ห้ามคัดลอกคำอธิบายจากคนอื่น
 
 ```text
-
+Step 1: รับเดือน และ วัน
+Step 2: ตั้งแต่วันที่ 21 ของเดือนที่ 3 หารลงตัว ให้เพิ่มขั้น 1 เดือน
+Step 3: เดือนที่ 1, 2, 3 หรือ มากกว่า 12 เป็น (winter)
+        เดือน 4, 5, 6 เป็น (spring)
+        เดือนที่ 7, 8, 9 เป็น (summer)
+        เดือน 10, 11, 12 เป็น (fall)
 ```
 
 ---
@@ -135,31 +145,32 @@ Step 3:
 ทำไมเลือก case นี้:
 
 ```text
-
+ทดสอบวันที่เกิน 21 ว่าจะเพิ่ม 1 เดือนไหม
 ```
 
 Input:
 
 ```text
-
+3
+21
 ```
 
 Expected output:
 
 ```text
-
+spring
 ```
 
 Actual output:
 
 ```text
-
+spring
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +178,32 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+ถ้าเดือนเกิน 12
 ```
 
 Input:
 
 ```text
-
+12
+21
 ```
 
 Expected output:
 
 ```text
-
+winter
 ```
 
 Actual output:
 
 ```text
-
+winter
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -199,31 +211,32 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+วันเกินแต่ไม่เปลี่ยนฤดู
 ```
 
 Input:
 
 ```text
-
+4
+21
 ```
 
 Expected output:
 
 ```text
-
+spring
 ```
 
 Actual output:
 
 ```text
-
+spring
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ---
@@ -233,7 +246,7 @@ Pass / Not Pass
 ใช้ AI กับโจทย์นี้หรือไม่
 
 ```text
-Yes / No
+No
 ```
 
 ถ้าใช้ AI ต้องทำไฟล์นี้ด้วย:
@@ -251,7 +264,7 @@ ai_reflection.md
 ได้ถามเพื่อน TA ผู้สอน หรือบุคคลอื่นเพื่อขอความช่วยเหลือในโจทย์นี้หรือไม่
 
 ```text
-Yes / No
+No
 ```
 
 ถ้าใช่ ให้อธิบายสั้น ๆ ว่าได้รับความช่วยเหลือแบบใด
@@ -305,10 +318,10 @@ No
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
-| I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I wrote this submission in my own words. |Yes|
+| I understand my final code. |Yes|
+| I recorded the real OJ status. |Yes|
+| I did not copy AI-generated text directly into this file. |Yes|
+| I did not copy code from another person. |Yes|
+| If I received human help, I disclosed it in this file. |No|
+| I submitted the final code to the OJ by myself. |Yes|
