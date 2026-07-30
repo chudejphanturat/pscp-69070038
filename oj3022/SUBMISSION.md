@@ -15,25 +15,25 @@
 หมายเลข/ชื่อโจทย์ OJ:
 
 ```text
-
+3022
 ```
 
 OJ submission ID ถ้ามีการส่งแล้ว:
 
 ```text
-
+558829
 ```
 
 สถานะ OJ:
 
 ```text
-Pass / Not Pass / Not Submit
+Pass
 ```
 
 เวลาที่ใช้คิดและทำโจทย์ด้วยตนเอง:
 
 ```text
-
+30-60 minutes
 ```
 
 เลือกหนึ่งข้อ:
@@ -73,7 +73,7 @@ More than 4 weeks
 ถ้ายังไม่เข้าใจโจทย์ทั้งหมด ให้เขียนสิ่งที่เข้าใจในตอนนี้ ความเข้าใจอาจยังไม่ครบหรืออาจผิดได้ แต่ต้องพยายามอธิบายอย่างจริงใจ
 
 ```text
-
+รับข้อมูลเลขอุณหภูมิ และรับตัวอักษรหน่วยอุณหภูมิเริ่มต้น และรับตัวอักษรหน่วยอุณหภูมิที่จะแปลง นำเลขอุณหภูมิ แปลงจากหน่วยอุณหภูมิเริ่มต้นเป็นอุณหภูมิที่จะแปลง
 ```
 
 ---
@@ -93,9 +93,10 @@ More than 4 weeks
 สามารถเขียนเป็น pseudocode, flowchart idea หรือขั้นตอนความคิดได้
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1:รับ input อุณภูมิสัญลักษณ์ก่อน-หลัง
+Step 2:สร้างฟังก์ชั่นแปลงอุณหภูมิแปลงเป็นอุณหมูิต่างๆตามโจทย์
+Step 3:ใช้ฟังก์ชั่นแปลงเป็น celcius
+Step 4:ใช้ฟังก์ชั่นแปลงเป็นอุณภูมิที่ต้องการ
 ```
 
 ---
@@ -115,7 +116,11 @@ Step 3:
 ห้ามคัดลอกคำอธิบายจากคนอื่น
 
 ```text
-
+โค้ดแรกลืม python กลับสมการไม่ได้เลยต้องสร้างฟังก์ชั่นเพิ่มอีก 3 ตัวให้แปลงเป็น celcius ก่อน
+Step 1:รับ input อุณภูมิสัญลักษณ์ก่อน-หลัง
+Step 2:สร้างฟังก์ชั่นแปลงอุณหภูมิแปลงเป็น celcius และ celcius เป็นอุณหมูิต่างๆ
+Step 3:ใช้ฟังก์ชั่นแปลงเป็น celcius
+Step 4:ใช้ฟังก์ชั่นแปลงเป็นอุณภูมิที่ต้องการ
 ```
 
 ---
@@ -135,31 +140,33 @@ Step 3:
 ทำไมเลือก case นี้:
 
 ```text
-
+ดูว่าถ้าแปลงเป็นอุณหภูมิเดิมจะได้ไหมและทศนิยม 2 ตำแหน่งไหม
 ```
 
 Input:
 
 ```text
-
+12
+C
+C
 ```
 
 Expected output:
 
 ```text
-
+12.00
 ```
 
 Actual output:
 
 ```text
-
+12.00
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +174,33 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+ดูว่าค่าติดลบได้ผลไหม
 ```
 
 Input:
 
 ```text
-
+0
+K
+C
 ```
 
 Expected output:
 
 ```text
-
+-273.15
 ```
 
 Actual output:
 
 ```text
-
+-273.15
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -199,31 +208,34 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+ดูว่าแปลงได้ไหม
 ```
 
 Input:
 
 ```text
-
+53.485
+R
+K
+29.71
 ```
 
 Expected output:
 
 ```text
-
+29.71
 ```
 
 Actual output:
 
 ```text
-
+29.71
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ---
@@ -233,7 +245,7 @@ Pass / Not Pass
 ใช้ AI กับโจทย์นี้หรือไม่
 
 ```text
-Yes / No
+No
 ```
 
 ถ้าใช้ AI ต้องทำไฟล์นี้ด้วย:
@@ -251,7 +263,7 @@ ai_reflection.md
 ได้ถามเพื่อน TA ผู้สอน หรือบุคคลอื่นเพื่อขอความช่วยเหลือในโจทย์นี้หรือไม่
 
 ```text
-Yes / No
+No
 ```
 
 ถ้าใช่ ให้อธิบายสั้น ๆ ว่าได้รับความช่วยเหลือแบบใด
@@ -305,10 +317,10 @@ No
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
-| I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I wrote this submission in my own words. |Yes|
+| I understand my final code. |Yes|
+| I recorded the real OJ status. |Yes|
+| I did not copy AI-generated text directly into this file. |Yes|
+| I did not copy code from another person. |Yes|
+| If I received human help, I disclosed it in this file. |No|
+| I submitted the final code to the OJ by myself. |Yes|

@@ -188,13 +188,13 @@ yyyy
 Expected output:
 
 ```text
--
+
 ```
 
 Actual output:
 
 ```text
--
+
 ```
 
 Result:
