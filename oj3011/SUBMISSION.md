@@ -281,19 +281,19 @@ No
 ใครช่วยคุณ
 
 ```text
-
+No
 ```
 
 เขาช่วยอะไร
 
 ```text
-
+No
 ```
 
 คุณยังทำอะไรด้วยตนเอง
 
 ```text
-
+No
 ```
 
 คุณคัดลอก code จากคนอื่นหรือไม่
@@ -315,5 +315,5 @@ No
 | I recorded the real OJ status. |Yes|
 | I did not copy AI-generated text directly into this file. |Yes|
 | I did not copy code from another person. |Yes|
-| If I received human help, I disclosed it in this file. |No|
+| If I received human help, I disclosed it in this file. |Yes|
 | I submitted the final code to the OJ by myself. |Yes|
