@@ -21,7 +21,7 @@ OJ3058 - [LEARNING LOGS] BrickBridge
 OJ submission ID ถ้ามีการส่งแล้ว:
 
 ```text
-
+568567
 ```
 
 สถานะ OJ:
